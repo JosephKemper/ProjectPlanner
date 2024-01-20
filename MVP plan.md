@@ -1,0 +1,5 @@
+## General Concepts
+
+Build a console based task manager. For now, don't worry about building it as a graphical task manger. I can add that later. I have a lot to learn about building the front end side of things anyway. I want to start with a goal. From there, I will start a project whose purpose is to turn that goal into reality. The project will break down into tasks. Each goal can have multiple projects, and each project can have multiple tasks. I want the ability to display a goal and all of its attached projects, along with all of the related tasks. I also want the ability to see just the goals, projects, or tasks. I want to build an idea list, this will be a list of ideas that can eventually be turned into goals. All that needs to happen to turn an idea into a goal is to add a project to it. Goals, projects, and tasks will all have due dates, current status tracking, and the ability to add notes. Obviously, I will need the ability to create, edit, and delete goals, projects, and tasks. 
+
+
