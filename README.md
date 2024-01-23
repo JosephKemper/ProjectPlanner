@@ -1,5 +1,5 @@
 # Software Goals
-The goal of this project is to build a project planner that I will use in my future projects I build with TechFirst. I also want to experiment with the use of multiple languages and to showcase my skills as a programmer. Accordingly, I will be planning out the algorithm for my program, and then building it simultaneously in Python, JavaScript, C#, and Kotlin. 
+This currently unnamed project management software, will include a full suite of every tool needed to manage a project, whether as a single person, or as a large corporation. The goal is to include everything you could possibly need to manage a project. From estimating the completion date, to estimating the hours actually spent on the project, and from tracking what resources you might need to figuring out which project or task needs to be completed in which order and it will notify you of when you are risking falling behind.
 
 # Software Description
 
