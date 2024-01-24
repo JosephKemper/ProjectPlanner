@@ -30,9 +30,60 @@ I want to be able to track the actual amount of time worked (via estimating the 
 * Track needed resources for each project/task
 * Estimate the target completion date based on current progress. 
 * Get and track progress reports for projects and tasks. 
+* Track information about the people assigned to the project/task
 
 ## Feature Details
 ### Track ideas, goals, projects, and tasks
 #### General Thoughts
 
-Ideally, I will want each of these to be custom built data structures. An idea would have a name, description, and any applicable notes. In addition to what an idea has, a goal would have assigned projects, start date, and due date. 
+Ideally, I will want ideas, goals, projects, and tasks to all be custom built data structures. 
+Ideas:
+
+* Name: Short and descriptive name for the idea.
+* Description: Detailed description of the idea, including its purpose and potential benefits.
+* Notes: Any additional information or thoughts about the idea.
+* Priority: (Optional) A way to prioritize ideas for future development.
+* Date created: (Optional) Timestamp of when the idea was created.
+
+Goals:
+
+* Inherit all data from the Idea class.
+* Target date: Desired completion date for the goal.
+* Projects: List of associated projects that contribute to achieving the goal.
+* Status: Current progress status of the goal (e.g., in progress, on hold, achieved).
+* Progress: The percentage of the goal that has been achieved.
+* Start Date: The date when work towards this goal begins.
+* Due Date: The target date for achieving this goal.
+
+Projects:
+
+* Inherit all data from the Goal class.
+* Tasks: List of tasks required to complete the project.
+* Resources: List of resources needed for the project (e.g., equipment, software, data).
+* Skills: List of skills required for project completion.
+* Team: List of individuals assigned to the project.
+* Estimated time: Total estimated time required to complete the project.
+* Start date: Planned start date for the project.
+* Dependencies: List of other projects that need to be completed before this project can start (and vice versa).
+* Risk assessment: (Optional) Potential risks associated with the project and mitigation strategies.
+* Warnings: Alerts if the project is at risk of not meeting its target completion date.
+
+Tasks:
+
+* Inherit all data from the Project class.
+* Supplies: List of specific supplies needed to complete the task.
+* Estimated time: Estimated time required to complete the task.
+* Actual Time Spent: The actual time spent on the task so far.
+* Priority: Priority level within the project (e.g., high, medium, low).
+* Status: Current progress status of the task (e.g., open, in progress, completed).
+* Assigned to: Individual assigned to the task (optional).
+* Dependencies: List of other tasks that need to be completed before this task can start (and vice versa).
+* Warnings: Alerts if the project is at risk of not meeting its target completion date.
+
+Additional Possibilities:
+
+* Date and time tracking: Implement mechanisms to track actual time spent on tasks and projects for progress reporting and future estimation accuracy.
+* Progress reporting: Develop functionalities to generate reports on project and task progress, including completion percentage, time remaining, and potential delays.
+* Notifications and alerts: Set up automatic notifications to alert users about overdue tasks, approaching deadlines, and potential project risks.
+* User roles and permissions: Define different user roles with varying access levels to manage projects, tasks, and data.
+* Person class to manage the information about the individuals working on the project, including their skills, availability, and hours worked. This class could be referenced by the "Individuals Assigned" attribute in the Project class.
