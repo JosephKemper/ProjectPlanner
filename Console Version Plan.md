@@ -96,3 +96,5 @@ Person:
 * Position: What position they hold within the company
 * Worked Projects: A list of the projects they have previously worked on
 * Worked Tasks: A list of the tasks they have previously worked on
+* Email address: Their email address
+* Other Contact info: A list of other contact info the person wishes to provide
