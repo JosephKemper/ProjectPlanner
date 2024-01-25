@@ -87,3 +87,12 @@ Additional Possibilities:
 * Notifications and alerts: Set up automatic notifications to alert users about overdue tasks, approaching deadlines, and potential project risks.
 * User roles and permissions: Define different user roles with varying access levels to manage projects, tasks, and data.
 * Person class to manage the information about the individuals working on the project, including their skills, availability, and hours worked. This class could be referenced by the "Individuals Assigned" attribute in the Project class.
+
+Person:
+* Skills: A list of skills the person has, that can be used to better determine which projects and/or tasks they can be assigned to
+* Availability: What time they normally work, to again, help better plan what projects and/or tasks they can be assigned to
+* Hours Worked: The hours they worked on a specific project or task
+* Name: The person's name
+* Position: What position they hold within the company
+* Worked Projects: A list of the projects they have previously worked on
+* Worked Tasks: A list of the tasks they have previously worked on
