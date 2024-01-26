@@ -8,11 +8,13 @@ I also want to add the ability to track requirements going both directions on bo
 
 I want to be able to track the actual amount of time worked (via estimating the number of hours worked in a day not through actual reporting) on a project/task. I want to be able to get a projection based on time taken so far, for how long it will take to complete the project and compare that to the target completion date. And I want a progress report feature that could be used to report on progress for the day. 
 
+I also want to add in analytics technology to be able to try to predict how long it will take a person to perform a project/task based on prior projects/tasks with similar skills. Ideally, I want this information in some form to be available to supervisors and employees. The goal for both will be to help them learn where there are weaknesses so they can better plan for improvement. My first thought for how to complete this is to simply track how long a job takes and then create a data structure of some sorts for each skill to then average out the length of time it takes for jobs involving that skill. I had the specific thought to track both the raw data, and the difference between the actual time and estimated time. As I think about this, I would also want to do the same thing with the skill of estimating the time to complete a job, and try to use that to generate better estimates of how long the job will take. 
+
 ## Features List
 
 * Track ideas, goals, projects, and tasks (collectively referred to objects)
-* Create, edit, delete goals, projects, and tasks
-* Use current date to show objects by due date and flag any overdue objects
+* Create, edit, and delete ideas, goals, projects, and tasks
+* - Use current date to show objects by due date and flag any overdue objects
 * Automatically show any overdue objects upon loading of the program
 * Automatically show a list of any objects that are due soon
 * Automatically convert an idea into a goal when a project is attached to it
@@ -31,13 +33,15 @@ I want to be able to track the actual amount of time worked (via estimating the 
 * Estimate the target completion date based on current progress. 
 * Get and track progress reports for projects and tasks. 
 * Track information about the people assigned to the project/task
+* Predictive Analytics that use prior data to better forecast both the actual time it will take to complete the job, and to generate more accurate forecasts
+* Easy access for all parties to use forecasting data to figure out where they need to improve
 
 ## Feature Details
 ### Track ideas, goals, projects, and tasks
 #### General Thoughts
 
 Ideally, I will want ideas, goals, projects, and tasks to all be custom built data structures. 
-Ideas:
+#### Ideas:
 
 * Name: Short and descriptive name for the idea.
 * Description: Detailed description of the idea, including its purpose and potential benefits.
@@ -45,7 +49,7 @@ Ideas:
 * Priority: (Optional) A way to prioritize ideas for future development.
 * Date created: (Optional) Timestamp of when the idea was created.
 
-Goals:
+#### Goals:
 
 * Inherit all data from the Idea class.
 * Target date: Desired completion date for the goal.
@@ -55,7 +59,7 @@ Goals:
 * Start Date: The date when work towards this goal begins.
 * Due Date: The target date for achieving this goal.
 
-Projects:
+#### Projects:
 
 * Inherit all data from the Goal class.
 * Tasks: List of tasks required to complete the project.
@@ -68,7 +72,7 @@ Projects:
 * Risk assessment: (Optional) Potential risks associated with the project and mitigation strategies.
 * Warnings: Alerts if the project is at risk of not meeting its target completion date.
 
-Tasks:
+#### Tasks:
 
 * Inherit all data from the Project class.
 * Supplies: List of specific supplies needed to complete the task.
@@ -80,7 +84,7 @@ Tasks:
 * Dependencies: List of other tasks that need to be completed before this task can start (and vice versa).
 * Warnings: Alerts if the project is at risk of not meeting its target completion date.
 
-Additional Possibilities:
+#### Additional Possibilities:
 
 * Date and time tracking: Implement mechanisms to track actual time spent on tasks and projects for progress reporting and future estimation accuracy.
 * Progress reporting: Develop functionalities to generate reports on project and task progress, including completion percentage, time remaining, and potential delays.
@@ -88,7 +92,7 @@ Additional Possibilities:
 * User roles and permissions: Define different user roles with varying access levels to manage projects, tasks, and data.
 * Person class to manage the information about the individuals working on the project, including their skills, availability, and hours worked. This class could be referenced by the "Individuals Assigned" attribute in the Project class.
 
-Person:
+#### Person:
 * Skills: A list of skills the person has, that can be used to better determine which projects and/or tasks they can be assigned to
 * Availability: What time they normally work, to again, help better plan what projects and/or tasks they can be assigned to
 * Hours Worked: The hours they worked on a specific project or task
@@ -98,3 +102,8 @@ Person:
 * Worked Tasks: A list of the tasks they have previously worked on
 * Email address: Their email address
 * Other Contact info: A list of other contact info the person wishes to provide
+
+### Create, edit, and delete ideas, goals, projects, and tasks
+
+Not much to explain in this. The details of how to create, edit, and delete items would need to be figured out after more has been planned about the details to the structure of the app. 
+
