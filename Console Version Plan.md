@@ -14,7 +14,7 @@ I also want to add in analytics technology to be able to try to predict how long
 
 * Track ideas, goals, projects, and tasks (collectively referred to objects)
 * Create, edit, and delete ideas, goals, projects, and tasks
-* - Use current date to show objects by due date and flag any overdue objects
+* Use current date to show objects by due date and flag any overdue objects
 * Automatically show any overdue objects upon loading of the program
 * Automatically show a list of any objects that are due soon
 * Automatically convert an idea into a goal when a project is attached to it
@@ -23,7 +23,7 @@ I also want to add in analytics technology to be able to try to predict how long
 * Display all tasks
 * Display all projects
 * Display all goals
-* Attach due dates to any object other than an idea
+* -Attach due dates to any object other than an idea
 * Track project/task requirements going both directions
 * Track the number of people working on the project, the number of hours they work, and which tasks/projects they can work on. 
 * Track the skills required for each project, and the skills each person has
@@ -106,4 +106,41 @@ Ideally, I will want ideas, goals, projects, and tasks to all be custom built da
 ### Create, edit, and delete ideas, goals, projects, and tasks
 
 Not much to explain in this. The details of how to create, edit, and delete items would need to be figured out after more has been planned about the details to the structure of the app. 
+
+### Use current date to show objects by due date and flag any overdue objects
+
+Will use the current date of the system, compare that to the projects/tasks in the app, and then automatically display a warning message about overdue projects/tasks. 
+Will also show how long until the project/task is due. 
+
+### Automatically show any overdue objects upon loading of the program
+
+Same as above except it displays to the main screen
+
+### Automatically show a list of any objects that are due soon
+
+Same as above except it displays to the main screen
+
+### Automatically convert an idea into a goal when a project is attached to it
+
+Behind the scenes this will automatically remove the goal from the data structure storing all current goals, and add the details of that goal to a newly created project. This will require many data fields to be optional to work properly. 
+
+### Display all objects attached to a goal 
+
+This will display a goal, any anything that might be attached to it, or an item attached to it. 
+
+### Display all tasks attached to a project
+
+This will display all tasks attached to the selected project
+
+### Display all tasks
+
+This will display all current tasks regardless of the project they are attached to
+
+### Display all projects
+
+This will display all current projects
+
+### Display all goals
+
+This will display all current goals. 
 
