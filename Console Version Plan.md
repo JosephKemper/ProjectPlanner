@@ -23,7 +23,7 @@ I also want to add in analytics technology to be able to try to predict how long
 * Display all tasks
 * Display all projects
 * Display all goals
-* -Attach due dates to any object other than an idea
+* Attach due dates to any object other than an idea
 * Track project/task requirements going both directions
 * Track the number of people working on the project, the number of hours they work, and which tasks/projects they can work on. 
 * Track the skills required for each project, and the skills each person has
@@ -144,3 +144,30 @@ This will display all current projects
 
 This will display all current goals. 
 
+### Attach due dates to any object other than an idea
+
+All dates should be easily searchable. Would also want the process of pulling the data out in O1 time. For Python, this could be accomplished by a dictionary with the due date stored using the date or due_date keyword. I would imagine similar concepts could be accomplished in C#, JavaScript, and Kotlin. 
+
+### Track project/task requirements going both directions
+
+I could attach a variable to each project/task that would track what projects/tasks that could act like a linked list of sorts. One variable could be used to look for the project with the appropriate name. It would be nice if I could somehow guarantee that it will point to the right place, using names will only work if I can guarantee that the names will be unique, and while I could add that qualification, I think there should be a better way. I will have to put some thought into how to do that. One possibility is that I just assign each project/task a unique identifier. One simple way to do that is to use the date the project/task was created as the start to a number and then add on an extra number based on the sequence the project/task was created in. For example, if 3 tasks had been created on 27 January 2024, the task numbers could be 12720240, 12720241, and 12720242, thus rendering a constantly unique number to use for each project or task. 
+
+### Track the number of people working on the project, the number of hours they work, and which tasks/projects they can work on. 
+
+### Track the skills required for each project, and the skills each person has
+
+### Use project/task requirements along with required skills and estimated hours to complete and then the skills and available hours for each project/task to create an suggested minimum completion time. 
+
+### In project/task warnings letting them know if they are risking affecting the project completion target
+
+### Track needed resources for each project/task
+
+### Estimate the target completion date based on current progress. 
+
+### Get and track progress reports for projects and tasks. 
+
+### Track information about the people assigned to the project/task
+
+### Predictive Analytics that use prior data to better forecast both the actual time it will take to complete the job, and to generate more accurate forecasts
+
+### Easy access for all parties to use forecasting data to figure out where they need to improve
