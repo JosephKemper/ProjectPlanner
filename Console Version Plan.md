@@ -68,6 +68,8 @@ Ideally, I will want ideas, goals, projects, and tasks to all be custom built da
 * Team: List of individuals assigned to the project.
 * Estimated time: Total estimated time required to complete the project.
 * Start date: Planned start date for the project.
+* Available People: A list of people with the skills needed to work on this project/task.
+* Assigned People: A list of the current people assigned to this project/task
 * Dependencies: List of other projects that need to be completed before this project can start (and vice versa).
 * Risk assessment: (Optional) Potential risks associated with the project and mitigation strategies.
 * Warnings: Alerts if the project is at risk of not meeting its target completion date.
@@ -154,9 +156,15 @@ I could attach a variable to each project/task that would track what projects/ta
 
 ### Track the number of people working on the project, the number of hours they work, and which tasks/projects they can work on. 
 
+While a report will need to be built to make this more user friendly, the functionality can be built into the different data structures to track all of these features. 
+
 ### Track the skills required for each project, and the skills each person has
 
+Same as above, the functionality for this can be built into the different data structures to track required skills. 
+
 ### Use project/task requirements along with required skills and estimated hours to complete and then the skills and available hours for each project/task to create an suggested minimum completion time. 
+
+I need to figure out the algorithm for this one. I am not currently sure how to do it, but I will figure it out. 
 
 ### In project/task warnings letting them know if they are risking affecting the project completion target
 
