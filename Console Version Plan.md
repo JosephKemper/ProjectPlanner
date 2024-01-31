@@ -169,6 +169,8 @@ The requirements I want to have are as follows:
     > The reason this is important is because if there are 4 projects/tasks that each require 8 hours of work and that have no prerequisites but only have two employees to put towards the projects then the system might try to suggest that they work on all 4 at the same time. So, this means that I would need to take into account the available hours. 
 * A required field for project/task creation will be to tell the system what project/s or task/s would need to be completed before this project/task. 
 * A project/task that has no prerequisite project/task, would be added to the list of head projects/tasks. 
+* Each project/task, will have two time estimates built into it. One that shows just how long to complete it, and one that shows how long to complete it and everything that follows it. This will be updated upon creation of a project/task for any project/task that needs to be completed before it is started. 
+    > Possible implementation, create a list of projects/tasks that need to be completed first, and add it to the data that each project uses. From there, when we assign a project as a prerequisite of another, the list it has could be copied to the project/task being created and then we would just add the newly assigned prerequisite project/task to the list for the newly created project/task. Thus for updating time to complete, we would only need to iterate through the new project's prerequisite list. 
 
 Steps to build suggested minimum completion time for projects/tasks. 
 * Check available hours per day for working on projects/tasks
