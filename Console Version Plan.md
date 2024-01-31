@@ -164,7 +164,23 @@ Same as above, the functionality for this can be built into the different data s
 
 ### Use project/task requirements along with required skills and estimated hours to complete and then the skills and available hours for each project/task to create an suggested minimum completion time. 
 
-I need to figure out the algorithm for this one. I am not currently sure how to do it, but I will figure it out. 
+The requirements I want to have are as follows:
+* The ability to set how many hours are available per day put towards projects/tasks. 
+    > The reason this is important is because if there are 4 projects/tasks that each require 8 hours of work and that have no prerequisites but only have two employees to put towards the projects then the system might try to suggest that they work on all 4 at the same time. So, this means that I would need to take into account the available hours. 
+* A required field for project/task creation will be to tell the system what project/s or task/s would need to be completed before this project/task. 
+* A project/task that has no prerequisite project/task, would be added to the list of head projects/tasks. 
+* Each project/task, will have two time estimates built into it. One that shows just how long to complete it, and one that shows how long to complete it and everything that follows it. This will be updated upon creation of a project/task for any project/task that needs to be completed before it is started. 
+    > Possible implementation, create a list of projects/tasks that need to be completed first, and add it to the data that each project uses. From there, when we assign a project as a prerequisite of another, the list it has could be copied to the project/task being created and then we would just add the newly assigned prerequisite project/task to the list for the newly created project/task. Thus for updating time to complete, we would only need to iterate through the new project's prerequisite list. 
+
+Steps to build suggested minimum completion time for projects/tasks. 
+* Check available hours per day for working on projects/tasks
+* With projects/tasks prerequisites already set, select project/task head that has the longest time to complete when factoring in the projects/tasks that have that as a head. 
+    * If multiple projects have the same prerequisite, then check if there are enough hours to work all projects. 
+        * If not, select the project/task sequence that would take the longest to complete.
+        * Start any branches of the longest project chain, the moment enough time becomes available by order of longest to complete. 
+* Fill in any projects/tasks that do not have any other tasks that use them as a prerequisite as enough hours become available. 
+    * Fill any open slots with the project/task that would use the most of that time. 
+
 
 ### In project/task warnings letting them know if they are risking affecting the project completion target
 
