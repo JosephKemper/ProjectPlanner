@@ -184,14 +184,28 @@ Steps to build suggested minimum completion time for projects/tasks.
 
 ### In project/task warnings letting them know if they are risking affecting the project completion target
 
+I could add an extra variable to each project/task that gives leeway time, which would track how much that specific project/task could be delayed without setting the whole project behind, from there, the system would just have to check the difference between the hours spent, the time allotted, and the leeway time, and could generate warnings when they are running out of time. 
+
 ### Track needed resources for each project/task
+
+A simple data structure like a list could be used to track this. 
 
 ### Estimate the target completion date based on current progress. 
 
+This would use either the estimated time worked (tracked by simply tracking the number of working days passed since the project/task was started) or the actual time worked and then use the estimated time to complete to give updates for how long it will take to complete the project. Ideally, I would want to use the skills needed for each project/task and then generate a more dynamic forecast of the estimated time to complete. I'll just build the more basic version first, and then build the upgraded version later. 
+
 ### Get and track progress reports for projects and tasks. 
+
+This would basically involve a specialized messenger type service with a specific template built into the app. I could even add the ability for individual managers to customize what goes into each report. 
 
 ### Track information about the people assigned to the project/task
 
+Possible things (in addition to the basics like personal information) the skills they have, how long they take on projects/tasks using certain skills, and what projects/tasks they have worked on along with any statistical data I feel like trying to collect. 
+
 ### Predictive Analytics that use prior data to better forecast both the actual time it will take to complete the job, and to generate more accurate forecasts
 
+The goal would be to use the skills and statistical data collected about how long it takes to complete a task to forecast an estimate of how long it would take to complete a given project/task. I'll need to dig out my statistics book for this, but that is fine. Statistics are fun. 
+
 ### Easy access for all parties to use forecasting data to figure out where they need to improve
+
+The forecasting and statistical data will be useable by individual users (customized to their needs) so they can get recommended skills to improve on. For example, if the time they take on tasks involving a certain sill always take 20% longer than their average time, the system would give them a suggestion to try to practice more on that skill. The same thing, but with a broader view including all people supervised would be visible to managers
