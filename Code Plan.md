@@ -2,5 +2,14 @@ For this project, all code that displays things to the user will be kept separat
 
 # Data Structures
 
+An Idea is just that, an idea you are debating on doing something with. 
+
 ![Idea UML class Diagram](/UML%20Diagrams/idea%20UML.png)
 
+A Goal is an idea that you have started to work towards completing. A Goal is what you want to achieve by starting to work on a project. 
+
+![Goal UML class Diagram](/UML%20Diagrams/Goal%20UML.png)
+
+A project is a goal in action. It is the means by which a goal is accomplished. 
+
+![Project UML class Diagram](/UML%20Diagrams/Project%20UML.png)
