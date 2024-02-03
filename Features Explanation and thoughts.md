@@ -68,8 +68,7 @@ Ideally, I will want ideas, goals, projects, and tasks to all be custom built da
 * Team: List of individuals assigned to the project.
 * Estimated time: Total estimated time required to complete the project.
 * Start date: Planned start date for the project.
-* Available People: A list of people with the skills needed to work on this project/task.
-* Assigned People: A list of the current people assigned to this project/task
+* Qualified People: A list of people with the skills needed to work on this project/task.
 * Dependencies: List of other projects that need to be completed before this project can start (and vice versa).
 * Risk assessment: (Optional) Potential risks associated with the project and mitigation strategies.
 * Warnings: Alerts if the project is at risk of not meeting its target completion date.
