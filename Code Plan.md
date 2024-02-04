@@ -13,3 +13,10 @@ A Goal is an idea that you have started to work towards completing. A Goal is wh
 A project is a goal in action. It is the means by which a goal is accomplished. 
 
 ![Project UML class Diagram](/UML%20Diagrams/Project%20UML.png)
+
+A task is a specific portion of a project designed in scope to be completed in a short time frame. 
+![Task UML class Diagram](/UML%20Diagrams/Task%20UML.png)
+
+The person data class is an independent data class that defines the data needed for a person to work within the app. 
+
+![Person UML class Diagram](/UML%20Diagrams/Person%20UML.png)

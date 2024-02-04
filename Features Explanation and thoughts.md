@@ -77,13 +77,10 @@ Ideally, I will want ideas, goals, projects, and tasks to all be custom built da
 
 * Inherit all data from the Project class.
 * Supplies: List of specific supplies needed to complete the task.
-* Estimated time: Estimated time required to complete the task.
 * Actual Time Spent: The actual time spent on the task so far.
 * Priority: Priority level within the project (e.g., high, medium, low).
 * Status: Current progress status of the task (e.g., open, in progress, completed).
 * Assigned to: Individual assigned to the task (optional).
-* Dependencies: List of other tasks that need to be completed before this task can start (and vice versa).
-* Warnings: Alerts if the project is at risk of not meeting its target completion date.
 
 #### Additional Possibilities:
 
