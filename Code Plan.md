@@ -20,3 +20,5 @@ A task is a specific portion of a project designed in scope to be completed in a
 The person data class is an independent data class that defines the data needed for a person to work within the app. 
 
 ![Person UML class Diagram](/UML%20Diagrams/Person%20UML.png)
+
+![Unique Identifier class Diagram](/UML%20Diagrams/UniqueID%20UML.png)
